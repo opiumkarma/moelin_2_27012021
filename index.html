@@ -4,23 +4,36 @@
 <head>
 	<meta charset="utf-8">
 	<title>Reservia</title>
-	<script src="https://kit.fontawesome.com/5cd039c683.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="index.css">
+	<script src="https://kit.fontawesome.com/e7fbb89de5.js" crossorigin="anonymous"></script>
+	<link rel="icon" href="logo.ico" />
+
+
 </head>
-<nav>
-	<img src="photos/Reservia@3x.png" alt="logo reservia" />
-	<a href="#">Hébergements</a>
-	<a href="#">Activités</a>
-	<a href="#">S'inscrire</a>
-</nav>
+
 
 <body>
+	<nav class="nav">
+		<img class="logoreservia" src="images/logo/Reservia.svg" alt="Reservia">
+		<nav class="nav1">
+			<a class="liennav" href="#hébergement" data-active="true">Hébergement</a>
+			<a class="liennav" href="#" data-active="false">Activités</a>
+		</nav>
+		<a class="sinscrire" href="#">S'inscrire</a>
+	</nav>
 	<header>
 		<h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-		<p>En plein centre ville ou en pleine nature</p>
-		<i class="fas fa-map-marker-alt"></i>
-		<input class="forminput" type="search" placeholder="Marseille, France" size="1">
-		<button class="bouton">
-			<span class="spanrecherche">Rechercher</span>
+		<p>En plein centre de ville ou en pleine nature</p>
+		<form class="form">
+			<span class="formspan">
+				<i class="fas fa-map-marker-alt searchFormWrapiconIcon" aria-hidden="true"></i>
+			</span>
+			<input class="forminput" type="search" placeholder="Marseille, France" size="1">
+			<button class="bouton">
+				<span class="spanrecherche">Rechercher</span>
+
+			</button>
+		</form>
 	</header>
 	<aside>
 		<p>Filtres</p>
@@ -31,7 +44,7 @@
 	</aside>
 	<p><i class="fas fa-info"></i>Plus de 500 logements sont disponibles dans cette ville</p>
 	<section>
-		<h2>Hébergement à Marseille</h2>
+		<h2 id="hébergement">Hébergement à Marseille</h2>
 		<a href="#">
 			<img src="images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
 			<p>Auberge de la Cannebière Nuit à partir de 25€</p>
@@ -118,7 +131,7 @@
 		</a>
 	</section>
 	<section>
-		<h2>Activités à Marseille</h2>
+		<h2 id="activités">Activités à Marseille</h2>
 		<a href="#"><img src="images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg">
 			Vieux Port
 		</a>
