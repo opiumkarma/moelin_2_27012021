@@ -1,0 +1,87 @@
+a
+{
+    color: black;
+    text-decoration: none;
+}
+body
+{
+    font-family: Comic Sans MS, "Impact", Arial, Verdana, sans-serif;
+}
+
+.nav {
+    display: grid;
+    align-items: center;
+    max-width: 1440px;
+    margin: auto;
+  }
+  .logoreservia
+   {
+    padding: 0 2rem;
+    height: 2.813rem;
+  }
+  .nav1 {
+    display: flex;
+    align-items: center;
+    grid-area: navbar;
+  }
+  .liennav {
+    padding: 2rem;
+    font-weight: 500;
+    text-align: center;
+    transition-duration: 0.1s;
+    border-top: 3px transparent solid;
+    border-bottom: 3px transparent solid;
+  }
+  .liennav[data-active=true] {
+    color: #0065FC;
+  }
+  .liennav:hover {
+    color: #0065FC;
+  }
+  .sinscrire {
+    display: flex;
+    align-items: center;
+    grid-area: button;
+    padding: 2rem;
+    color: #0065FC;
+    font-weight: 600;
+  }
+  
+  @media screen and (min-width: 601px) {
+    .nav {
+      grid-template-columns: auto 1fr auto auto;
+      grid-template-areas: "logo . navbar button";
+    }
+    .liennav[data-active=true] {
+      border-top: 3px solid #0065FC;
+    }
+    .liennav:hover {
+      border-top: 3px solid #0065FC;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .nav {
+      grid-template-columns: auto 1fr auto;
+      grid-template-areas: "logo . button" "navbar navbar navbar";
+    }
+    .logoreservia {
+      order: 0;
+    }
+    .sinscrire {
+      order: 1;
+    }
+    .nav {
+      order: 2;
+    }
+    .liennav {
+      border-top: none;
+      border-bottom: 3px solid #F2F2F2;
+      width: 50%;
+    }
+    .liennav[data-active=true] {
+      border-bottom-color: #0065FC;
+    }
+    .liennav:hover {
+      border-bottom-color: #0065FC;
+    }
+  }
