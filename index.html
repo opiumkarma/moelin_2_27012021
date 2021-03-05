@@ -24,29 +24,55 @@
 	<header>
 		<h1>Trouvez votre hébergement pour des vacances de rêve</h1>
 		<p>En plein centre de ville ou en pleine nature</p>
-		<form class="form">
-			<span class="formspan">
-				<i class="fas fa-map-marker-alt searchFormWrapiconIcon" aria-hidden="true"></i>
+		<form class="recherche">
+			<span class="recherchespan">
+			  <i class="fas fa-map-marker-alt rechercheicon" aria-hidden="true"></i>
 			</span>
-			<input class="forminput" type="search" placeholder="Marseille, France" size="1">
+			<input class="rechercheinput" type="search" placeholder="Marseille, France" size="1">
 			<button class="bouton">
-				<span class="spanrecherche">Rechercher</span>
-
+			  <span class="recherchetext">Rechercher</span>
+	
 			</button>
 		</form>
 	</header>
 	<aside>
-		<p>Filtres</p>
-		<a href="#"><i class="fas fa-money-bill-wave"></i>economique</a>
-		<a href="#"><i class="fas fa-child"></i>familial</a>
-		<a href="#"><i class="fas fa-heart"></i>romantique</a>
-		<a href="#"><i class="fas fa-dog"></i>animeaux autorisés</a>
+		<div id="filtreblocs">
+			<p class="titrefiltres">Filtres</p>
+			<div class="bloc">
+				<div class="icons">
+					<i class="fas fa-money-bill-wave couleuricons"></i>
+				</div>
+				<span class="clickfiltres">economique</span>
+
+			</div>
+			<div class="bloc">
+				<div class="icons">
+					<i class="fas fa-child couleuricons"></i>
+				</div>
+				<span class="clickfiltres">Familial</span>
+
+			</div>
+			<div class="bloc">
+				<div class="icons">
+					<i class="fas fa-heart couleuricons"></i>
+				</div>
+				<span class="clickfiltres">Romantique</span>
+
+			</div>
+			<div class="bloc">
+				<div class="icons">
+					<i class="fas fa-dog couleuricons"></i>
+				</div>
+				<span class="clickfiltres">Animeaux autorisés</span>
+
+			</div>
+		</div>
+		<div class="info"><div class="infoicon"><i class="fas fa-info infoicons"></i></div><p class="infotext">Plus de 500 logements sont disponibles dans cette ville</p></div>
 	</aside>
-	<p><i class="fas fa-info"></i>Plus de 500 logements sont disponibles dans cette ville</p>
 	<section>
 		<h2 id="hébergement">Hébergement à Marseille</h2>
 		<a href="#">
-			<img src="images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
+			<img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
 			<p>Auberge de la Cannebière Nuit à partir de 25€</p>
 			<i class="fas fa-star"></i>
 			<i class="fas fa-star"></i>
@@ -55,7 +81,7 @@
 			<i class="far fa-star"></i>
 		</a>
 		<a href="#">
-			<img src="images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg">
+			<img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg">
 			<p>Hôtel du port Nuit à partir de 52€</p>
 			<i class="fas fa-star"></i>
 			<i class="fas fa-star"></i>
@@ -64,7 +90,7 @@
 			<i class="fas fa-star"></i>
 		</a>
 		<a href="#">
-			<img src="images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg">
+			<img src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg">
 			<p>Hôtel Les mouettes Nuit à partir de 76€</p>
 			<i class="fas fa-star"></i>
 			<i class="fas fa-star"></i>
@@ -73,7 +99,7 @@
 			<i class="far fa-star"></i>
 		</a>
 		<a href="#">
-			<img src="images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg">
+			<img src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg">
 			<p>Hôtel de la mer Nuit à partir de 46€</p>
 			<i class="fas fa-star"></i>
 			<i class="fas fa-star"></i>
@@ -82,7 +108,7 @@
 			<i class="far fa-star"></i>
 		</a>
 		<a href="#">
-			<img src="images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg">
+			<img src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg">
 			<p>Auberge Le Panier Nuit à partir de 23€</p>
 			<i class="fas fa-star"></i>
 			<i class="fas fa-star"></i>
@@ -91,7 +117,7 @@
 			<i class="far fa-star"></i>
 		</a>
 		<a href="#">
-			<img src="images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg">
+			<img src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg">
 			<p>Hôtel chez Amina Nuit à partir de 96€</p>
 			<i class="fas fa-star"></i>
 			<i class="fas fa-star"></i>
@@ -132,22 +158,22 @@
 	</section>
 	<section>
 		<h2 id="activités">Activités à Marseille</h2>
-		<a href="#"><img src="images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg">
+		<a href="#"><img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg">
 			Vieux Port
 		</a>
-		<a href="#"><img src="images/activites/2_large/paul-hermann-QFTrLdQIRhI-unsplash.jpg">
+		<a href="#"><img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg">
 			Fort de Pomègue
 		</a>
-		<a href="#"><img src="images/activites/2_large/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg">
+		<a href="#"><img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg">
 			Îles du Frioul
 		</a>
-		<a href="#"><img src="images/activites/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg">
+		<a href="#"><img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg">
 			Parc National des Calanques
 		</a>
-		<a href="#"><img src="images/activites/2_large/florian-wehde-xW9e8gdotxI-unsplash.jpg">
+		<a href="#"><img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg">
 			Notre-Dame-de-la-Garde
 		</a>
-		<a href="#"><img src="images/activites/2_large/lena-paulin-wH2-EJoDcV0-unsplash.jpg">
+		<a href="#"><img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg">
 			Parc Longchamp
 		</a>
 	</section>
