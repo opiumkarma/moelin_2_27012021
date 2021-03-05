@@ -85,3 +85,120 @@ body
       border-bottom-color: #0065FC;
     }
   }
+  #filtreblocs
+  {
+    display: flex;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+  }
+  .bloc
+  {
+    display: flex;
+    align-items: center;
+    margin-right: 2rem;
+    border: 2px solid #D9D9D9;
+    border-radius: 2rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    transition-duration: 0.1s;
+    font-weight: bold;
+  }
+  .icons
+  {
+    background-color: #DEEBFF;
+    border-radius: 100%;
+    height: 3rem;
+    width: 3rem;
+    min-height: 3.5rem;
+    min-width: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: -2px;
+    
+  }
+  .titrefiltres
+  {
+    margin: 0 2rem 1rem 0;
+    display: flex;
+    align-items: center;
+  }
+  .clickfiltres
+  {
+    margin: 0 1rem;
+  }
+  .couleuricons
+  {
+    color: blue;
+  }
+  .info
+  {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0 2rem 0;
+  }
+  .infoicon
+  {
+    height: 2rem;
+    width: 2rem;
+    min-height: 2rem;
+    min-width: 2rem;
+    border: solid 1px #D9D9D9;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+  }
+.infoicons
+{
+  color: #0065FC;
+}
+.infotext
+{
+  margin: 0;
+}
+.recherche
+{
+  display: inline-flex;
+  max-width: 100%;
+  overflow: auto;
+}
+.recherchespan 
+{
+  background-color: #F2F2F2;
+  padding: 1rem 1.25rem;
+  border-radius: 1rem 0 0 1rem;
+  text-align: center;
+}
+.rechercheinput 
+{
+  border-right: none;
+  border-left: none;
+  border-top: #F2F2F2 1px solid;
+  border-bottom: #F2F2F2 1px solid;
+  padding: 0 1.5rem;
+  box-sizing: border-box;
+  width: 14rem;
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: "Raleway", "Sans serif";
+}
+.rechercheinput::placeholder
+{
+  font-family: "Raleway", "Sans serif";
+  font-size: 1rem;
+  color: #00000069;
+}
+.bouton
+{
+  background-color: #0065FC;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 0 1rem 1rem 0;
+  padding: 0 1.5rem;
+  font-family: "Raleway", "Sans serif";
+  font-size: 1rem;
+  cursor: pointer;
+}
