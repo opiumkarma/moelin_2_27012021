@@ -1,19 +1,24 @@
+/*couleur des lien en noir*/
 a
 {
     color: black;
     text-decoration: none;
 }
+/*couleur des lien en noir*/
+/*police d'écriture*/
 body
 {
     font-family: Comic Sans MS, "Impact", Arial, Verdana, sans-serif;
 }
-
-.nav {
+/*police d'écriture*/
+/*hébergement activités s'inscrire plus logo reservia*/
+.nav
+{
     display: grid;
     align-items: center;
     max-width: 1440px;
     margin: auto;
-  }
+}
   .logoreservia
    {
     padding: 0 2rem;
@@ -84,6 +89,7 @@ body
     .liennav:hover {
       border-bottom-color: #0065FC;
     }
+/*hébergement activités s'inscrire plus logo reservia*/    
   }
   #filtreblocs
   {
@@ -201,4 +207,33 @@ body
   font-family: "Raleway", "Sans serif";
   font-size: 1rem;
   cursor: pointer;
+}
+.hebergement
+{
+  display: flex;
+  border-radius: 3%;
+  border: solid 1px #F2F2F2;
+  background-color: #F2F2F2;
+  padding: 5rem 7rem;
+}
+.hotelmarseille
+{
+  display: flex;
+  border-radius: 3%;
+  border: solid 1px white;
+  background-color: white;
+}
+.hebergementphoto
+{
+  display: flex;
+  border-radius: 1rem 1rem 0rem 0rem;
+  width: 100%;
+  height: 7rem;
+  object-fit: cover;
+  max-height: 100%;
+}
+.notehotel
+{
+  display: flex;
+  color: #0065FC;
 }
