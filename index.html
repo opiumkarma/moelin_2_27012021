@@ -8,8 +8,6 @@
 	<link rel="stylesheet" href="index.css">
 	<script src="https://kit.fontawesome.com/e7fbb89de5.js" crossorigin="anonymous"></script>
 	<link rel="icon" href="logo.ico" />
-
-
 </head>
 <!--titre et logo de la fenetre---------------------------------------------------------------------------------------->
 
@@ -35,7 +33,6 @@
 			<input class="rechercheinput" type="search" placeholder="Marseille, France" size="1">
 			<button class="bouton">
 				<span class="recherchetext">Rechercher</span>
-
 			</button>
 		</form>
 	</header>
@@ -48,46 +45,47 @@
 				<div class="icons">
 					<i class="fas fa-money-bill-wave couleuricons"></i>
 				</div>
-				<span class="clickfiltres">economique</span>
-
+				<span class="clickfiltres" alt="onglet économique">économique</span>
 			</div>
 			<div class="bloc">
 				<div class="icons">
 					<i class="fas fa-child couleuricons"></i>
 				</div>
-				<span class="clickfiltres">Familial</span>
-
+				<span class="clickfiltres" alt="onglet familial">Familial</span>
 			</div>
 			<div class="bloc">
 				<div class="icons">
 					<i class="fas fa-heart couleuricons"></i>
 				</div>
-				<span class="clickfiltres">Romantique</span>
-
+				<span class="clickfiltres" alt="onglet romantique">Romantique</span>
 			</div>
 			<div class="bloc">
 				<div class="icons">
 					<i class="fas fa-dog couleuricons"></i>
 				</div>
-				<span class="clickfiltres">Animeaux autorisés</span>
-
+				<span class="clickfiltres" alt="animeaux autorisés">Animeaux autorisés</span>
 			</div>
 		</div>
 		<div class="info">
 			<div class="infoicon"><i class="fas fa-info infoicons"></i></div>
-			<p class="infotext">Plus de 500 logements sont disponibles dans cette ville</p>
+			<p class="infotext" alt="plus de 500 logements sont disponibles dans cette ville">Plus de 500 logements sont disponibles dans cette ville</p>
 		</div>
 	</aside>
 	<!--filtres et info---------------------------------------------------------------------------------------------------->
 	<!--les différents hébergements a Marseille---------------------------------------------------------------------------->
-	<section>
+	<section class="sectionhebergement">
 		<div class="hebergement">
-			<h2 id="hébergements">Hébergement à Marseille</h2>
-			<article>
+			<header class="headerbloc1">
+				<h2 class="h2bloc1" id="hébergements">Hébergement à Marseille</h2>
+			</header>
+			<!--Aubgerge de la Cannebière------------------------------------------------------------------------------------------>
+			<article class="articlebloc1">
 				<a href="#">
 					<figure class="hotelmarseille">
-						<img src="images/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
-						<figcaption class="nomhotel">Auberge de la Cannebière</figcaption>
+						<img class="hotelmarseilleimg" alt="photo de l'auberge de la cannebière, nuit a partir de 25euro" src="images/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
+						<figcaption class="nomhotel">
+							<h3 class="nomtext">Auberge de la Cannebière</h3>
+						</figcaption>
 					</figure>
 					<p class="prixhotel">Nuit à partir de <strong>25€</strong></p>
 					<div class="notehotel">
@@ -99,11 +97,15 @@
 					</div>
 				</a>
 			</article>
-			<article>
+			<!--Aubgerge de la Cannebière------------------------------------------------------------------------------------------>
+			<!--Hôtel du port------------------------------------------------------------------------------------------------------>
+			<article class="articlebloc1">
 				<a href="#"></a>
 				<figure class="hotelmarseille">
-					<img src="images/fred-kleber-gTbaxaVLvsg-unsplash.jpg">
-					<figcaption class="nomhotel">Hôtel du port</figcaption>
+					<img class="hotelmarseilleimg" alt="photo de l'hôtel du port ,nuit a partir de 52euro" src="images/fred-kleber-gTbaxaVLvsg-unsplash.jpg">
+					<figcaption class="nomhotel">
+						<h3 class="nomtext">Hôtel du port</h3>
+					</figcaption>
 				</figure>
 				<p class="prixhotel">Nuit à partir de <strong>52€</strong></p>
 				<div class="notehotel">
@@ -115,11 +117,15 @@
 				</div>
 				</a>
 			</article>
-			<article>
+			<!--Hôtel du port------------------------------------------------------------------------------------------------------>
+			<!--Hôtel Les mouettes------------------------------------------------------------------------------------------------->
+			<article class="articlebloc1">
 				<a href="#">
 					<figure class="hotelmarseille">
-						<img src="images/reisetopia-B8WIgxA_PFU-unsplash.jpg">
-						<figcaption class="nomhotel">Hôtel Les mouettes</figcaption>
+						<img class="hotelmarseilleimg" alt="photo de l'hôtel des mouettes, nuit a partir de 76euro" src="images/reisetopia-B8WIgxA_PFU-unsplash.jpg">
+						<figcaption class="nomhotel">
+							<h3 class="nomtext">Hôtel Les mouettes</h3>
+						</figcaption>
 					</figure>
 					<p class="prixhotel">Nuit à partir de <strong>76€</strong></p>
 					<div class="notehotel">
@@ -131,11 +137,15 @@
 					</div>
 				</a>
 			</article>
-			<article>
+			<!--Hôtel Les mouettes------------------------------------------------------------------------------------------------->
+			<!--Hôtel de la mer---------------------------------------------------------------------------------------------------->
+			<article class="articlebloc1">
 				<a href="#">
 					<figure class="hotelmarseille">
-						<img src="images/annie-spratt-Eg1qcIitAuA-unsplash.jpg">
-						<figcaption class="nomhotel">Hôtel de la mer</figcaption>
+						<img class="hotelmarseilleimg" alt="photo de l'hôtel de la mer, nuit a partir de 46euro" src="images/annie-spratt-Eg1qcIitAuA-unsplash.jpg">
+						<figcaption class="nomhotel">
+							<h3 class="nomtext">Hôtel de la mer</h3>
+						</figcaption>
 					</figure>
 					<p class="prixhotel">Nuit à partir de <strong>46€</strong></p>
 					<div class="notehotel">
@@ -147,11 +157,15 @@
 					</div>
 				</a>
 			</article>
-			<article>
+			<!--Hôtel de la mer---------------------------------------------------------------------------------------------------->
+			<!--Auberge Le Panier-------------------------------------------------------------------------------------------------->
+			<article class="articlebloc1">
 				<a href="#">
 					<figure class="hotelmarseille">
-						<img src="images/nicate-lee-kT-ZyaiwBe0-unsplash.jpg">
-						<figcaption class="nomhotel">Auberge Le Panier</figcaption>
+						<img class="hotelmarseilleimg" alt="photo de l'auberge le panier, nuit a partir de 23euro" src="images/nicate-lee-kT-ZyaiwBe0-unsplash.jpg">
+						<figcaption class="nomhotel">
+							<h3 class="nomtext">Auberge Le Panier</h3>
+						</figcaption>
 					</figure>
 					<p class="prixhotel">Nuit à partir de <strong>23€</strong></p>
 					<div class="notehotel">
@@ -163,11 +177,15 @@
 					</div>
 				</a>
 			</article>
-			<article>
+			<!--Auberge Le Panier-------------------------------------------------------------------------------------------------->
+			<!--Hôtel chez Amina--------------------------------------------------------------------------------------------------->
+			<article class="articlebloc1">
 				<a href="#">
 					<figure class="hotelmarseille">
-						<img src="images/febrian-zakaria-M6S1WvfW68A-unsplash.jpg">
-						<figcaption class="nomhotel">Hôtel chez Amina</figcaption>
+						<img class="hotelmarseilleimg" alt="photo de l'hotel chez amina, nuit a partir de 96euro" src="images/febrian-zakaria-M6S1WvfW68A-unsplash.jpg">
+							<figcaption class="nomhotel">
+							<h3 class="nomtext">Hôtel chez Amina</h3>
+						</figcaption>
 					</figure>
 					<p class="prixhotel">Nuit à partir de <strong>96€</strong></p>
 					<div class="notehotel">
@@ -179,8 +197,7 @@
 					</div>
 				</a>
 			</article>
-
-
+			<!--Hôtel chez Amina--------------------------------------------------------------------------------------------------->
 			<a href="#">Afficher plus</a>
 		</div>
 	</section>
